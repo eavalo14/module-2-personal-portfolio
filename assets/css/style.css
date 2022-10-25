@@ -25,7 +25,7 @@ header {
     background-color: #d9b08c;
     padding: 5px;
     font-family: "Barlow Condensed",sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal;
     font-stretch: condensed;
@@ -51,7 +51,7 @@ header {
 .nav ul li a{
     padding: 5px;
     font-family: "Barlow Condensed",sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     font-style: normal;
     font-stretch: condensed;
@@ -64,7 +64,6 @@ header {
     width: 100px;
     justify-content: center;
     align-content: center;
-    /* text-align: center; */
 }
 
 .rounded {
@@ -82,10 +81,9 @@ header {
     font-style: normal;
     font-stretch: condensed;
     line-height: 3.5;
-    /* letter-spacing: normal; */
+    letter-spacing: normal;
     text-transform: uppercase;
     color: #fff;
-    /* text-align: center; */
 }
 
 .sub-title {
@@ -93,14 +91,11 @@ header {
     align-items: center;
     justify-content: center;
     align-content: center;
-    width: 250px;
-    /* text-align: center; */
+    width: 25%;
 }
 
 .desc-about-me {
     display: inline-block;
-    margin-top: 10px;
-    margin-left: 25px;
     text-transform: none;
     justify-content: center;
     align-content: center;
@@ -117,17 +112,20 @@ a {
 }
 
 .experiences {
-    display: inline-flex;
-    width:1200px;
+    display: inline-block;
+    width: 75%;
     text-align: center;
     align-items: center;
     justify-content: center;
     color: white;
+    text-transform: none;
   }
 
 .card-main {
-    display: flex;
-    width: 650px;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
@@ -140,30 +138,38 @@ a {
 
 }
 .card-main a img {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    /* height: 400px; */
 }
 
 .card-main:hover {
     background:#2c3531;
     border-color: #2c3531;
 }
-.block-test {
-    display: block;
-}
 
 .card-sub {
-    display: block;
+    display: inline-flex;
+    width: 37.5%;
+    /* min-height: 20%; */
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
     border-color: #2c3531;
     padding: 10px;
     flex: 0 0 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .card-sub a img {
-    width: 300px;
-    height: 100px;
+    width: 100%;
+    height: 260px;
+    /* height: 50%; */
+}
+
+.card-sub:hover {
+    background:#2c3531;
+    border-color: #2c3531;
 }
 
 .card-section {
@@ -171,6 +177,23 @@ a {
     text-align: center; 
 }
 
+.nav-contact{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    float: right;
+}
+
+.nav-contact ul{
+    list-style: none;
+}
+
+.nav-contact ul li{
+    margin: 10px;
+    display: inline;    
+    text-transform: none;
+
+}
 
 
 
@@ -182,6 +205,32 @@ a {
         align-content: center;
         text-align: center;
     }
+
+    .experiences{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .card-main {
+        text-align: center;
+        width: 100%;
+    }
+    .card-sub {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-main a img {
+        flex-direction: column;
+        width: 100%;
+    }
+    /* .card-sub a img {
+        flex-direction: column;
+        width: 10px;
+        height: 10px;
+    } */
+
     .nav{
         flex-direction: column;
         width: 100%;
@@ -194,6 +243,11 @@ a {
     }
     .info-base {
         flex-direction: column;
+    }
+    .nav-contact{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
 
     section {
