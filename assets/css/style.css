@@ -33,25 +33,25 @@ header {
     letter-spacing: normal;
     text-transform: uppercase;
     color: #fff;
-  }
+}
   
-  .nav{
+.nav{
     display: inline-flex;
     float: right;
-  }
+}
 
-  .nav ul{
+.nav ul{
     list-style: none;
-  }
+}
 
-  .nav ul li{
+.nav ul li{
     display: inline;
-  }
+}
 
-  .nav ul li a{
+.nav ul li a{
     padding: 5px;
     font-family: "Barlow Condensed",sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     font-style: normal;
     font-stretch: condensed;
@@ -62,13 +62,141 @@ header {
     text-decoration: none;
     margin: 20px;
     width: 100px;
-  }
+    justify-content: center;
+    align-content: center;
+    /* text-align: center; */
+}
 
-  .rounded {
+.rounded {
     border-bottom: 8px solid #116466;
     border-radius: 5px;
+    display:block
+}
+
+.info-base{
+    display: inline-flex;
+    width: 100%;
+    font-family: "Barlow Condensed",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    line-height: 3.5;
+    /* letter-spacing: normal; */
+    text-transform: uppercase;
+    color: #fff;
+    /* text-align: center; */
+}
+
+.sub-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 250px;
+    /* text-align: center; */
+}
+
+.desc-about-me {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 25px;
+    text-transform: none;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    text-align:center;
+    
+}
+a {
+    text-decoration: none;
+}
+
+#experience{
+    background-color: #d9b08c;
+}
+
+.experiences {
+    display: inline-flex;
+    width:1200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
 
-  .info-base{
-    width: 100%;
-  }
+.card-main {
+    display: flex;
+    width: 650px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #2c3531;
+    padding: 10px;
+    flex: 0 0 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-main a img {
+    width: 600px;
+    height: 400px;
+}
+
+.card-main:hover {
+    background:#2c3531;
+    border-color: #2c3531;
+}
+.block-test {
+    display: block;
+}
+
+.card-sub {
+    display: block;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #2c3531;
+    padding: 10px;
+    flex: 0 0 200px;
+}
+.card-sub a img {
+    width: 300px;
+    height: 100px;
+}
+
+.card-section {
+    color: white;
+    text-align: center; 
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .card-name, .sub-title, .desc-about-me{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .nav{
+        flex-direction: column;
+        width: 100%;
+        text-align:center;
+
+    }
+    .rounded{
+        flex-direction: column;
+        width: 100%;
+    }
+    .info-base {
+        flex-direction: column;
+    }
+
+    section {
+        padding-right: 0;
+    }
+}
