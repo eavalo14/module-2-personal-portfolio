@@ -3,4 +3,4 @@
 <img src="https://github.com/eavalo14/module-2-personal-portfolio/blob/main/assets/images/webpage.png" alt="Alt text" title="Optional title">
 
 ## Deployed Application
-https://eavalo14.github.io/module-2-personal-portfolio/
+https://erickjavalos.github.io/module-2-personal-portfolio/
